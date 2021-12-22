@@ -1,0 +1,36 @@
+header{
+	padding-top: 0px;
+}
+#logo{
+	height: 90px;
+	width: 90px;
+}
+#link{
+	color: black;
+	font-weight: bold;
+}
+li:hover{
+	background-color: #B9D5AF;
+}
+.featurette-heading{
+	text-align: center;
+
+}
+p{
+	text-align: center;
+}
+#house{
+	padding-left: 20px;
+}
+#container{
+	background-color: #BDDCAE;
+}
+#img{
+	border-radius: 100%;
+	border: 5px solid silver;
+}
+.nav-item{
+	border: 1px solid silver;
+	margin: 2px;
+	border-radius: 10%;
+}

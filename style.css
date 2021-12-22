@@ -1,0 +1,94 @@
+header{
+	padding-top: 0px;
+}
+#logo{
+	height: 90px;
+	width: 90px;
+}
+#link{
+	color: black;
+	font-weight: bold;
+}
+li:hover{
+	background-color: #B9D5AF;
+}
+.ms-3:hover{
+	background-color: white;
+}
+#house{
+	padding-left: 20px;
+}
+#welcome{
+	text-align: center;
+	background-color: #F8FAF7;
+	font-size: 4rem;
+	font-weight: bold;
+	color: darkgray;
+	font-family: sans-serif;
+}
+h2{
+	text-align: center;
+	background-color: white;
+}
+.d-block w-100{
+	width: 70%;
+}
+#imgs{
+	margin: auto;
+	width: 80%;
+	padding-bottom: 400px;
+}
+section{
+	padding-top: 20px;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+article{
+	display: inline-block;
+	margin: auto;
+	width: 60%;
+	padding-right: 20px;
+
+}
+aside{
+	display: inline-block;
+	width: 30%;
+	padding-left: 10px;
+
+
+}
+#prof{
+	border-radius: 100%;
+	width: 140px;
+	height: 140px;
+}
+.nav-item{
+	border: 1px solid silver;
+	margin: 2px;
+	border-radius: 10%;
+}
+#btn{
+	background-color: #9BC886;
+	border: none;
+	font-weight: bold;
+}
+#libro{
+	width: 100%;
+	height: 100%;
+	margin-left: 50%;
+}
+#navi{
+	list-style: none;
+}
+#2{
+	padding-left: 50%;
+}
+#contacs:hover{
+	background-color: white;
+}
+#contacs{
+	width: 100%;
+	text-align: left;
+}

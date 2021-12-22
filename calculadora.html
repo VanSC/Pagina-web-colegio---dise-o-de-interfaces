@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Reserva de cita</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+		<header class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img id="logo" src="img/156 135.png">
+    <a href="paginaprincipal.html" id="link" class="navbar-brand"><img id="house" src="img/house.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="link" class="nav-link active" aria-current="page" href="nosotros.html" target="_blank">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link active" aria-current="page" href="#">GRADOS</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="calculadora.html" target="_blank">HERRAMIENTAS</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="comentario.html" target="_blank">COMENTARIOS</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="#">COMUNIDAD</a>
+        </li>
+
+      </ul>
+        <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+    </div>
+  </div>
+</nav>
+</header>
+<br><br>
+	<div class="container">
+			<h1 class="container" id="cabecera">Calculadora</h1>
+			<br>
+			<div class="container" id="img"><img src="img/156 135.png" width="20%" height="20%"></div>
+			<br>
+			<p> <strong>La página de nuestro colegio cuenta con una pequeña calculadora, la cual puedes utilizar para realizar calculos básicos.</strong>
+			<p> <strong>Que te parece si la usamos de una vez!!!!!</strong>
+				<p>Ingrese un número</p>
+		<input class="form-control" id="numero1"><br>
+			<p>Ingrese otro número</p>
+		<input class="form-control" id="numero2"><br>
+		<p>
+	<button type="button" class="btn btn-primary" onclick="myFuction()">Suma</button>
+	<button type="button1" class="btn btn-secondary" onclick="myFuction1()">Resta</button>
+	<button type="button2" class="btn btn-info" onclick="myFuction2()">Multiplicación</button>
+	<button type="button3" class="btn btn-success" onclick="myFuction3()">División</button>
+
+	<p id="sumar"></p>
+	<p id="restar"></p>
+	<p id="multiplicar"></p>
+	<p id="dividir"></p>
+	<br><br>
+	<hr>
+
+	<footer class="container">
+    <p class="float-end"><a href="herramientas2.html">Regresar</a></p>
+    <p>Regatas JUNIOR-2021-2   <a href="#">Privacidad</a> &middot; <a href="#">Condiciones y terminos</a></p>
+  </footer>
+
+	<script type="text/javascript">
+		function myFuction(){
+			var x,y,suma,oracion,resultado;
+			x=document.getElementById("numero1").value;
+			y=document.getElementById("numero2").value;
+			if (isNaN(x)||isNaN(y)){
+				text="Obligatorio 2 numeros";
+			}else{
+				suma = parseFloat(x)+parseFloat(y);
+				resultado = suma;
+			}
+			    oracion;
+			document.getElementById("sumar").innerHTML = "El resultado de la suma es: " + resultado
+		}
+		function myFuction1(){
+			var x,y,resta,resultado;
+			x=document.getElementById("numero1").value;
+			y=document.getElementById("numero2").value;
+			if (isNaN(x)||isNaN(y)){
+				text="Obligatorio 2 numeros";
+			}else{
+				resta = parseFloat(x)-parseFloat(y);
+				resultado = resta;
+			}
+			document.getElementById("restar").innerHTML = "El resultado de la resta es: " + resultado
+		}
+		function myFuction2(){
+			var x,y,multiplicación,resultado;
+			x=document.getElementById("numero1").value;
+			y=document.getElementById("numero2").value;
+			if (isNaN(x)||isNaN(y)){
+				text="Obligatorio 2 numeros";
+			}else{
+				multiplicación = parseFloat(x)*parseFloat(y);
+				resultado = multiplicación;
+			}
+			document.getElementById("multiplicar").innerHTML = "El resultado de la multiplicación es: " + resultado
+		}
+		function myFuction3(){
+			var x,y,división,resultado;
+			x=document.getElementById("numero1").value;
+			y=document.getElementById("numero2").value;
+			if (isNaN(x)||isNaN(y)){
+				text="Obligatorio 2 numeros";
+			}else{
+				división = parseFloat(x)/parseFloat(y);
+				resultado = división;
+			}
+			document.getElementById("dividir").innerHTML = "El resultado de la división es: " + resultado
+		}
+	</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#div{
+	background-color: lightgray;
+}
+#text{
+	text-align: center;
+	color: black;
+	font-size: 2rem;
+	font-weight: bold;
+
+}
+#img{
+	border: 2px solid silver;
+	border-radius: 10%;
+}
+#button1{
+	background-color: #B9D5AF;
+	border: 1px solid #B9D5AF;
+	color: black;
+}
